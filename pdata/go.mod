@@ -37,3 +37,5 @@ retract (
 )
 
 replace go.opentelemetry.io/collector/featuregate => ../featuregate
+
+replace github.com/json-iterator/go => github.com/mhr3/jsoniter v1.4.0
