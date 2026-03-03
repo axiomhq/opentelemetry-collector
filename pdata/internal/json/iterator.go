@@ -186,7 +186,8 @@ func (iter *Iterator) ReadArray() bool {
 // ReadObject read one field from object.
 // If object ended, returns empty string. Otherwise, returns the field name.
 func (iter *Iterator) ReadObject() string {
-	return iter.delegate.ReadObject()
+	ret, _ := iter.delegate.ReadObject()
+	return ret
 }
 
 // ReadEnumValue returns the enum integer value representation. Accepts both enum names and enum integer values.
